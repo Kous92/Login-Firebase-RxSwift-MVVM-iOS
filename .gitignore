@@ -1,0 +1,11 @@
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## User settings
+xcuserdata/
+
+# Cacher la configuration Firebase
+GoogleService-Info.plist

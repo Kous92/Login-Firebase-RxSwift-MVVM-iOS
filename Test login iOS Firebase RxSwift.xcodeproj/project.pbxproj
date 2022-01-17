@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B11AF12277A7FF000EFE1A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B11AF11277A7FF000EFE1A3 /* LoginViewController.swift */; };
+		4B11AF14277A7FFC00EFE1A3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B11AF13277A7FFC00EFE1A3 /* RegisterViewController.swift */; };
+		4B71D71D277D3312002018E3 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71D71C277D3312002018E3 /* RegisterViewModel.swift */; };
+		4B71D71F277D4024002018E3 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71D71E277D4024002018E3 /* UserViewController.swift */; };
+		4BBA2F0F278656B90098F6FF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBA2F0E278656B90098F6FF /* HomeViewModel.swift */; };
+		4BBA2F13278659650098F6FF /* FirebaseAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBA2F12278659650098F6FF /* FirebaseAuthError.swift */; };
+		4BBFADE2276D5BC100C50509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFADE1276D5BC100C50509 /* AppDelegate.swift */; };
+		4BBFADE4276D5BC100C50509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFADE3276D5BC100C50509 /* SceneDelegate.swift */; };
+		4BBFADE6276D5BC100C50509 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFADE5276D5BC100C50509 /* HomeViewController.swift */; };
+		4BBFADE9276D5BC100C50509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFADE7276D5BC100C50509 /* Main.storyboard */; };
+		4BBFADEB276D5BC300C50509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFADEA276D5BC300C50509 /* Assets.xcassets */; };
+		4BBFADEE276D5BC300C50509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFADEC276D5BC300C50509 /* LaunchScreen.storyboard */; };
+		4BBFADF9276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFADF8276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftTests.swift */; };
+		4BBFAE03276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFAE02276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITests.swift */; };
+		4BBFAE05276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFAE04276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITestsLaunchTests.swift */; };
+		4BBFAE17276D5C7E00C50509 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFAE16276D5C7E00C50509 /* GoogleService-Info.plist */; };
+		4BD3D9AE277A8AFE00638745 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3D9AD277A8AFE00638745 /* LoginViewModel.swift */; };
+		4BD3D9B0277A8BA700638745 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3D9AF277A8BA700638745 /* StringExtensions.swift */; };
+		4BD3D9B2277A8D8300638745 /* FirebaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3D9B1277A8D8300638745 /* FirebaseAuthenticator.swift */; };
+		4BE419522776905C00CAFAD8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4194F2776905C00CAFAD8 /* CustomButton.swift */; };
+		4BE419532776905C00CAFAD8 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE419502776905C00CAFAD8 /* CustomView.swift */; };
+		4BE419542776905C00CAFAD8 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE419512776905C00CAFAD8 /* CustomImageView.swift */; };
+		A403F37B3252AB3069EDCAEC /* Pods_Test_login_iOS_Firebase_RxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5513886E9B6B647BF9ED90 /* Pods_Test_login_iOS_Firebase_RxSwiftTests.framework */; };
+		D4E53922F39F35692A8A0DA5 /* Pods_Test_login_iOS_Firebase_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76432A0B2AFBC7AB09E33CAF /* Pods_Test_login_iOS_Firebase_RxSwift.framework */; };
+		E25182AC6DCD99E2E50956E6 /* Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DA79CE16228B279AD811A8 /* Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BBFADF5276D5BC300C50509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBFADD6276D5BC100C50509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BBFADDD276D5BC100C50509;
+			remoteInfo = "Test login iOS Firebase RxSwift";
+		};
+		4BBFADFF276D5BC300C50509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBFADD6276D5BC100C50509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BBFADDD276D5BC100C50509;
+			remoteInfo = "Test login iOS Firebase RxSwift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AB689EA22BD5177FB9E9745 /* Pods-Test login iOS Firebase RxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test login iOS Firebase RxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-Test login iOS Firebase RxSwiftTests/Pods-Test login iOS Firebase RxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2679415BF7765181A3CD6517 /* Pods-Test login iOS Firebase RxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test login iOS Firebase RxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-Test login iOS Firebase RxSwiftTests/Pods-Test login iOS Firebase RxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B11AF11277A7FF000EFE1A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4B11AF13277A7FFC00EFE1A3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4B71D71C277D3312002018E3 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		4B71D71E277D4024002018E3 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		4BBA2F0E278656B90098F6FF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4BBA2F12278659650098F6FF /* FirebaseAuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthError.swift; sourceTree = "<group>"; };
+		4BBFADDE276D5BC100C50509 /* Test login iOS Firebase RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test login iOS Firebase RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBFADE1276D5BC100C50509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BBFADE3276D5BC100C50509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4BBFADE5276D5BC100C50509 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4BBFADE8276D5BC100C50509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BBFADEA276D5BC300C50509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BBFADED276D5BC300C50509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BBFADEF276D5BC300C50509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BBFADF4276D5BC300C50509 /* Test login iOS Firebase RxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test login iOS Firebase RxSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBFADF8276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_login_iOS_Firebase_RxSwiftTests.swift; sourceTree = "<group>"; };
+		4BBFADFE276D5BC300C50509 /* Test login iOS Firebase RxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test login iOS Firebase RxSwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBFAE02276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_login_iOS_Firebase_RxSwiftUITests.swift; sourceTree = "<group>"; };
+		4BBFAE04276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_login_iOS_Firebase_RxSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BBFAE16276D5C7E00C50509 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4BD3D9AD277A8AFE00638745 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4BD3D9AF277A8BA700638745 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		4BD3D9B1277A8D8300638745 /* FirebaseAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticator.swift; sourceTree = "<group>"; };
+		4BE4194F2776905C00CAFAD8 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4BE419502776905C00CAFAD8 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		4BE419512776905C00CAFAD8 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		4E5513886E9B6B647BF9ED90 /* Pods_Test_login_iOS_Firebase_RxSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_login_iOS_Firebase_RxSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB0F9A51BBB5EEA28AD2893 /* Pods-Test login iOS Firebase RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test login iOS Firebase RxSwift.release.xcconfig"; path = "Target Support Files/Pods-Test login iOS Firebase RxSwift/Pods-Test login iOS Firebase RxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		76432A0B2AFBC7AB09E33CAF /* Pods_Test_login_iOS_Firebase_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_login_iOS_Firebase_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D21A3AAE19679E6C9A05C5 /* Pods-Test login iOS Firebase RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test login iOS Firebase RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Test login iOS Firebase RxSwift/Pods-Test login iOS Firebase RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		C52767F6287968F3FF2F157F /* Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F0DA79CE16228B279AD811A8 /* Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8F241F0282F5D5B0507D0C /* Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BBFADDB276D5BC100C50509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E53922F39F35692A8A0DA5 /* Pods_Test_login_iOS_Firebase_RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBFADF1276D5BC300C50509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A403F37B3252AB3069EDCAEC /* Pods_Test_login_iOS_Firebase_RxSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBFADFB276D5BC300C50509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25182AC6DCD99E2E50956E6 /* Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		188A6C049C4301A4B3750CFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91D21A3AAE19679E6C9A05C5 /* Pods-Test login iOS Firebase RxSwift.debug.xcconfig */,
+				6EB0F9A51BBB5EEA28AD2893 /* Pods-Test login iOS Firebase RxSwift.release.xcconfig */,
+				FF8F241F0282F5D5B0507D0C /* Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.debug.xcconfig */,
+				C52767F6287968F3FF2F157F /* Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.release.xcconfig */,
+				1AB689EA22BD5177FB9E9745 /* Pods-Test login iOS Firebase RxSwiftTests.debug.xcconfig */,
+				2679415BF7765181A3CD6517 /* Pods-Test login iOS Firebase RxSwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4BBFADD5276D5BC100C50509 = {
+			isa = PBXGroup;
+			children = (
+				4BBFADE0276D5BC100C50509 /* Test login iOS Firebase RxSwift */,
+				4BBFADF7276D5BC300C50509 /* Test login iOS Firebase RxSwiftTests */,
+				4BBFAE01276D5BC300C50509 /* Test login iOS Firebase RxSwiftUITests */,
+				4BBFADDF276D5BC100C50509 /* Products */,
+				188A6C049C4301A4B3750CFE /* Pods */,
+				BAB245A62E30ED22FA0FE5FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BBFADDF276D5BC100C50509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFADDE276D5BC100C50509 /* Test login iOS Firebase RxSwift.app */,
+				4BBFADF4276D5BC300C50509 /* Test login iOS Firebase RxSwiftTests.xctest */,
+				4BBFADFE276D5BC300C50509 /* Test login iOS Firebase RxSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BBFADE0276D5BC100C50509 /* Test login iOS Firebase RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				4BE4194E2776901700CAFAD8 /* Custom Views */,
+				4BBFAE15276D5C6D00C50509 /* Home */,
+				4BBFAE13276D5C3C00C50509 /* Service */,
+				4BBFAE14276D5C4400C50509 /* User Part */,
+				4BBFAE12276D5C3100C50509 /* Register */,
+				4BBFAE11276D5C2A00C50509 /* Login */,
+				4BBFADE1276D5BC100C50509 /* AppDelegate.swift */,
+				4BBFADE3276D5BC100C50509 /* SceneDelegate.swift */,
+				4BBFADE7276D5BC100C50509 /* Main.storyboard */,
+				4BBFAE16276D5C7E00C50509 /* GoogleService-Info.plist */,
+				4BBFADEA276D5BC300C50509 /* Assets.xcassets */,
+				4BBFADEC276D5BC300C50509 /* LaunchScreen.storyboard */,
+				4BBFADEF276D5BC300C50509 /* Info.plist */,
+			);
+			path = "Test login iOS Firebase RxSwift";
+			sourceTree = "<group>";
+		};
+		4BBFADF7276D5BC300C50509 /* Test login iOS Firebase RxSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFADF8276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftTests.swift */,
+			);
+			path = "Test login iOS Firebase RxSwiftTests";
+			sourceTree = "<group>";
+		};
+		4BBFAE01276D5BC300C50509 /* Test login iOS Firebase RxSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFAE02276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITests.swift */,
+				4BBFAE04276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITestsLaunchTests.swift */,
+			);
+			path = "Test login iOS Firebase RxSwiftUITests";
+			sourceTree = "<group>";
+		};
+		4BBFAE11276D5C2A00C50509 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4B11AF11277A7FF000EFE1A3 /* LoginViewController.swift */,
+				4BD3D9AD277A8AFE00638745 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4BBFAE12276D5C3100C50509 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4B11AF13277A7FFC00EFE1A3 /* RegisterViewController.swift */,
+				4B71D71C277D3312002018E3 /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		4BBFAE13276D5C3C00C50509 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4BD3D9AF277A8BA700638745 /* StringExtensions.swift */,
+				4BD3D9B1277A8D8300638745 /* FirebaseAuthenticator.swift */,
+				4BBA2F12278659650098F6FF /* FirebaseAuthError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4BBFAE14276D5C4400C50509 /* User Part */ = {
+			isa = PBXGroup;
+			children = (
+				4B71D71E277D4024002018E3 /* UserViewController.swift */,
+			);
+			path = "User Part";
+			sourceTree = "<group>";
+		};
+		4BBFAE15276D5C6D00C50509 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFADE5276D5BC100C50509 /* HomeViewController.swift */,
+				4BBA2F0E278656B90098F6FF /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4BE4194E2776901700CAFAD8 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BE4194F2776905C00CAFAD8 /* CustomButton.swift */,
+				4BE419512776905C00CAFAD8 /* CustomImageView.swift */,
+				4BE419502776905C00CAFAD8 /* CustomView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		BAB245A62E30ED22FA0FE5FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76432A0B2AFBC7AB09E33CAF /* Pods_Test_login_iOS_Firebase_RxSwift.framework */,
+				F0DA79CE16228B279AD811A8 /* Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests.framework */,
+				4E5513886E9B6B647BF9ED90 /* Pods_Test_login_iOS_Firebase_RxSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BBFADDD276D5BC100C50509 /* Test login iOS Firebase RxSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBFAE08276D5BC300C50509 /* Build configuration list for PBXNativeTarget "Test login iOS Firebase RxSwift" */;
+			buildPhases = (
+				DE2F227E125613BDE0B420F0 /* [CP] Check Pods Manifest.lock */,
+				4BBFADDA276D5BC100C50509 /* Sources */,
+				4BBFADDB276D5BC100C50509 /* Frameworks */,
+				4BBFADDC276D5BC100C50509 /* Resources */,
+				DA108340274DC7BB9EF50BAB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test login iOS Firebase RxSwift";
+			productName = "Test login iOS Firebase RxSwift";
+			productReference = 4BBFADDE276D5BC100C50509 /* Test login iOS Firebase RxSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BBFADF3276D5BC300C50509 /* Test login iOS Firebase RxSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBFAE0B276D5BC300C50509 /* Build configuration list for PBXNativeTarget "Test login iOS Firebase RxSwiftTests" */;
+			buildPhases = (
+				56AB2D72B899F0E741F3C9B0 /* [CP] Check Pods Manifest.lock */,
+				4BBFADF0276D5BC300C50509 /* Sources */,
+				4BBFADF1276D5BC300C50509 /* Frameworks */,
+				4BBFADF2276D5BC300C50509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BBFADF6276D5BC300C50509 /* PBXTargetDependency */,
+			);
+			name = "Test login iOS Firebase RxSwiftTests";
+			productName = "Test login iOS Firebase RxSwiftTests";
+			productReference = 4BBFADF4276D5BC300C50509 /* Test login iOS Firebase RxSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BBFADFD276D5BC300C50509 /* Test login iOS Firebase RxSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBFAE0E276D5BC300C50509 /* Build configuration list for PBXNativeTarget "Test login iOS Firebase RxSwiftUITests" */;
+			buildPhases = (
+				2B0B07E96D78F9DCC36E8CC7 /* [CP] Check Pods Manifest.lock */,
+				4BBFADFA276D5BC300C50509 /* Sources */,
+				4BBFADFB276D5BC300C50509 /* Frameworks */,
+				4BBFADFC276D5BC300C50509 /* Resources */,
+				8B418B0214D0A97B66FA8E16 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BBFAE00276D5BC300C50509 /* PBXTargetDependency */,
+			);
+			name = "Test login iOS Firebase RxSwiftUITests";
+			productName = "Test login iOS Firebase RxSwiftUITests";
+			productReference = 4BBFADFE276D5BC300C50509 /* Test login iOS Firebase RxSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BBFADD6276D5BC100C50509 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4BBFADDD276D5BC100C50509 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					4BBFADF3276D5BC300C50509 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 4BBFADDD276D5BC100C50509;
+					};
+					4BBFADFD276D5BC300C50509 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 4BBFADDD276D5BC100C50509;
+					};
+				};
+			};
+			buildConfigurationList = 4BBFADD9276D5BC100C50509 /* Build configuration list for PBXProject "Test login iOS Firebase RxSwift" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BBFADD5276D5BC100C50509;
+			productRefGroup = 4BBFADDF276D5BC100C50509 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BBFADDD276D5BC100C50509 /* Test login iOS Firebase RxSwift */,
+				4BBFADF3276D5BC300C50509 /* Test login iOS Firebase RxSwiftTests */,
+				4BBFADFD276D5BC300C50509 /* Test login iOS Firebase RxSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BBFADDC276D5BC100C50509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBFADEE276D5BC300C50509 /* LaunchScreen.storyboard in Resources */,
+				4BBFADEB276D5BC300C50509 /* Assets.xcassets in Resources */,
+				4BBFADE9276D5BC100C50509 /* Main.storyboard in Resources */,
+				4BBFAE17276D5C7E00C50509 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBFADF2276D5BC300C50509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBFADFC276D5BC300C50509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B0B07E96D78F9DCC36E8CC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56AB2D72B899F0E741F3C9B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test login iOS Firebase RxSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B418B0214D0A97B66FA8E16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests/Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA108340274DC7BB9EF50BAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test login iOS Firebase RxSwift/Pods-Test login iOS Firebase RxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test login iOS Firebase RxSwift/Pods-Test login iOS Firebase RxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test login iOS Firebase RxSwift/Pods-Test login iOS Firebase RxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2F227E125613BDE0B420F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test login iOS Firebase RxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BBFADDA276D5BC100C50509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B11AF12277A7FF000EFE1A3 /* LoginViewController.swift in Sources */,
+				4BE419532776905C00CAFAD8 /* CustomView.swift in Sources */,
+				4B71D71F277D4024002018E3 /* UserViewController.swift in Sources */,
+				4BD3D9B0277A8BA700638745 /* StringExtensions.swift in Sources */,
+				4BBA2F13278659650098F6FF /* FirebaseAuthError.swift in Sources */,
+				4BE419542776905C00CAFAD8 /* CustomImageView.swift in Sources */,
+				4B11AF14277A7FFC00EFE1A3 /* RegisterViewController.swift in Sources */,
+				4BD3D9B2277A8D8300638745 /* FirebaseAuthenticator.swift in Sources */,
+				4BE419522776905C00CAFAD8 /* CustomButton.swift in Sources */,
+				4B71D71D277D3312002018E3 /* RegisterViewModel.swift in Sources */,
+				4BBA2F0F278656B90098F6FF /* HomeViewModel.swift in Sources */,
+				4BBFADE6276D5BC100C50509 /* HomeViewController.swift in Sources */,
+				4BBFADE2276D5BC100C50509 /* AppDelegate.swift in Sources */,
+				4BBFADE4276D5BC100C50509 /* SceneDelegate.swift in Sources */,
+				4BD3D9AE277A8AFE00638745 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBFADF0276D5BC300C50509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBFADF9276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BBFADFA276D5BC300C50509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBFAE03276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITests.swift in Sources */,
+				4BBFAE05276D5BC300C50509 /* Test_login_iOS_Firebase_RxSwiftUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BBFADF6276D5BC300C50509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BBFADDD276D5BC100C50509 /* Test login iOS Firebase RxSwift */;
+			targetProxy = 4BBFADF5276D5BC300C50509 /* PBXContainerItemProxy */;
+		};
+		4BBFAE00276D5BC300C50509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BBFADDD276D5BC100C50509 /* Test login iOS Firebase RxSwift */;
+			targetProxy = 4BBFADFF276D5BC300C50509 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BBFADE7276D5BC100C50509 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BBFADE8276D5BC100C50509 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BBFADEC276D5BC300C50509 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BBFADED276D5BC300C50509 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BBFAE06276D5BC300C50509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BBFAE07276D5BC300C50509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BBFAE09276D5BC300C50509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D21A3AAE19679E6C9A05C5 /* Pods-Test login iOS Firebase RxSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test login iOS Firebase RxSwift/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Test login iOS";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-login-iOS-Firebase-RxSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BBFAE0A276D5BC300C50509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB0F9A51BBB5EEA28AD2893 /* Pods-Test login iOS Firebase RxSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Test login iOS Firebase RxSwift/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Test login iOS";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-login-iOS-Firebase-RxSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BBFAE0C276D5BC300C50509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB689EA22BD5177FB9E9745 /* Pods-Test login iOS Firebase RxSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-login-iOS-Firebase-RxSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test login iOS Firebase RxSwift.app/Test login iOS Firebase RxSwift";
+			};
+			name = Debug;
+		};
+		4BBFAE0D276D5BC300C50509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2679415BF7765181A3CD6517 /* Pods-Test login iOS Firebase RxSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-login-iOS-Firebase-RxSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test login iOS Firebase RxSwift.app/Test login iOS Firebase RxSwift";
+			};
+			name = Release;
+		};
+		4BBFAE0F276D5BC300C50509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8F241F0282F5D5B0507D0C /* Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-login-iOS-Firebase-RxSwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Test login iOS Firebase RxSwift";
+			};
+			name = Debug;
+		};
+		4BBFAE10276D5BC300C50509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52767F6287968F3FF2F157F /* Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LX6HN92HPR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kous92.Test-login-iOS-Firebase-RxSwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Test login iOS Firebase RxSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BBFADD9276D5BC100C50509 /* Build configuration list for PBXProject "Test login iOS Firebase RxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBFAE06276D5BC300C50509 /* Debug */,
+				4BBFAE07276D5BC300C50509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBFAE08276D5BC300C50509 /* Build configuration list for PBXNativeTarget "Test login iOS Firebase RxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBFAE09276D5BC300C50509 /* Debug */,
+				4BBFAE0A276D5BC300C50509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBFAE0B276D5BC300C50509 /* Build configuration list for PBXNativeTarget "Test login iOS Firebase RxSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBFAE0C276D5BC300C50509 /* Debug */,
+				4BBFAE0D276D5BC300C50509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBFAE0E276D5BC300C50509 /* Build configuration list for PBXNativeTarget "Test login iOS Firebase RxSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BBFAE0F276D5BC300C50509 /* Debug */,
+				4BBFAE10276D5BC300C50509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BBFADD6276D5BC100C50509 /* Project object */;
+}

@@ -1,0 +1,3 @@
+# iOS (Swift 5): Test connexion et inscription avec Firebase et RxSwift (MVVM)
+
+L'architecture MVVM et la programmation réactive fonctionnelle sont très utlisées dans le développement iOS en entreprise. Firebase aussi est un framework très populaire de Google et aussi très utilisé en entreprise. Ici, voici un exemple où j'implémente une solution de connexion et d'inscription avec Firebase Auth et l'architecture MVVM avec le célèbre framework RxSwift pour une interface réactive. Le tout avec UIKit.

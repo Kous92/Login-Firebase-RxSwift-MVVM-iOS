@@ -1,0 +1,6 @@
+framework module Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests {
+  umbrella header "Pods-Test login iOS Firebase RxSwift-Test login iOS Firebase RxSwiftUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

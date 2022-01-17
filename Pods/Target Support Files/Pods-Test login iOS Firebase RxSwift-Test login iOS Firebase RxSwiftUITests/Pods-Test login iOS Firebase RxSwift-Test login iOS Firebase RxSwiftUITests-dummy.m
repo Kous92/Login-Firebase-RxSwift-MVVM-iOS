@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Test_login_iOS_Firebase_RxSwift_Test_login_iOS_Firebase_RxSwiftUITests
+@end
